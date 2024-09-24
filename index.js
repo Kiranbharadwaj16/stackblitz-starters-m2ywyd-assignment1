@@ -44,9 +44,9 @@ app.get('/calculate-tax', (req, res) => {
 
 function calculateDeliveryDays(shippingMethod, distance) {
   let deliveryDays;
-  if (shippingMethod === 'Standard') {
+  if (shippingMethod === 'standard') {
     deliveryDays = distance / 50;
-  } else if (shippingMethod === 'Express') {
+  } else if (shippingMethod === 'express') {
     deliveryDays = distance / 100;
   } else {
     deliveryDays = null;
